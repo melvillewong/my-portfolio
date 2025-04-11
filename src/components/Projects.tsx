@@ -45,43 +45,55 @@ function Projects() {
 							</CardHeader>
 							<CardContent>
 								<div className="flex flex-wrap gap-2">
-									{project.tags.map((tag, tagIndex) => (
-										<Badge key={tagIndex} variant="secondary">
-											{tag}
+									{project.technologies.map((tech, index) => (
+										<Badge key={index} variant="secondary">
+											{tech}
 										</Badge>
 									))}
 								</div>
 							</CardContent>
 							<CardFooter className="flex justify-between mt-auto">
-								{project.demoUrl && (
-									<Button variant="outline" size="sm" asChild>
-										<Link
-											href={project.demoUrl}
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											<ExternalLink className="mr-2 h-4 w-4" />
-											Demo
-										</Link>
-									</Button>
-								)}
-								<Button variant="outline" size="sm" className="ml-auto" asChild>
+								<Button variant="outline" size="sm" asChild>
 									<Link
-										href={project.repoUrl}
-										target="_blank"
+										href={`/projects/${project.slug}`}
 										rel="noopener noreferrer"
 									>
-										<Github className="mr-2 h-4 w-4" />
-										Code
+										View Details
 									</Link>
 								</Button>
+								<div className="flex gap-2">
+									{project.demoUrl && (
+										<Button variant="ghost" size="sm" asChild>
+											<Link
+												href={project.demoUrl}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<ExternalLink className="h-4 w-4" />
+												<span className="sr-only">Demo</span>
+											</Link>
+										</Button>
+									)}
+									{project.repoUrl && (
+										<Button variant="ghost" size="sm" asChild>
+											<Link
+												href={project.repoUrl}
+												target="_blank"
+												rel="noopener noreferrer"
+											>
+												<Github className="h-4 w-4" />
+												<span className="sr-only">Code</span>
+											</Link>
+										</Button>
+									)}
+								</div>
 							</CardFooter>
 						</Card>
 					))}
 				</div>
 				<div className="flex justify-center mt-8">
 					<Button variant="outline" asChild>
-						<Link href="#">View All Projects</Link>
+						<Link href="/projects">View All Projects</Link>
 					</Button>
 				</div>
 			</div>

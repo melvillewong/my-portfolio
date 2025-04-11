@@ -65,7 +65,7 @@ function MobileNavbar() {
 							className="flex items-center gap-3 justify-start"
 							asChild
 						>
-							<Link href="#about">
+							<Link href="/#about">
 								<BellIcon className="w-4 h-4" />
 								About
 							</Link>
@@ -75,7 +75,7 @@ function MobileNavbar() {
 							className="flex items-center gap-3 justify-start"
 							asChild
 						>
-							<Link href="#projects">
+							<Link href="/projects">
 								<UserIcon className="w-4 h-4" />
 								Projects
 							</Link>
@@ -85,7 +85,7 @@ function MobileNavbar() {
 							className="flex items-center gap-3 justify-start"
 							asChild
 						>
-							<Link href="#skills">
+							<Link href="/#skills">
 								<UserIcon className="w-4 h-4" />
 								Skills
 							</Link>
@@ -95,7 +95,7 @@ function MobileNavbar() {
 							className="flex items-center gap-3 justify-start"
 							asChild
 						>
-							<Link href="#contact">
+							<Link href="/#contact">
 								<UserIcon className="w-4 h-4" />
 								Contact
 							</Link>

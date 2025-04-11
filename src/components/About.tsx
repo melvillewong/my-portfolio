@@ -19,7 +19,7 @@ function About() {
 					<div className="flex justify-center">
 						<div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-primary">
 							<Image
-								src="/placeholder.svg?height=320&width=320"
+								src="/favicon.ico?height=320&width=320"
 								alt="Profile"
 								width={320}
 								height={320}
