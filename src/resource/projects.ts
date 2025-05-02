@@ -20,6 +20,25 @@ type Project = {
 
 export const projects: Project[] = [
 	{
+		title: "Social Media Clone",
+		slug: "social-media-clone",
+		description: "",
+		image: "/favicon.ico?height=600&width=1200",
+		technologies: ["React", "Next.js", "TypeScript", "PostgreSQL"],
+		category: "Web Application",
+		date: "",
+		demoUrl: "",
+		repoUrl: "",
+		overview: "",
+		featured: false,
+		challenge: "",
+		solution: "",
+		features: [],
+		gallery: [],
+		outcome: "",
+		lessons: "",
+	},
+	{
 		title: "E-commerce Platform",
 		slug: "ecommerce-platform",
 		description:
